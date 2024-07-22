@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#promos{
+  background-color: #000018;
+  padding-bottom: 5%;
+}
+
+.promocional{
+  
+  height: 420px;
+  margin-top: 20%;
+  border-radius: 20px;
+  
+}
+
+.promocional:hover{
+  box-shadow: 0 .25rem 5rem #da9a33 ;
+  
 }

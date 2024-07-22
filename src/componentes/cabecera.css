@@ -1,0 +1,60 @@
+
+.cabecera{
+    background-color: #000018;
+    display: grid; 
+    grid-template-columns: 25% 75% ; 
+    padding-left: 1.5%;  
+}
+
+.botones_inicio{
+    place-items: center;
+}
+
+input.inf_buscar{
+    border-style:solid;
+    border-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    width:200px;
+    background-color: #0f0f29;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button.boton_inicio{
+    font-family:Arial, Helvetica, sans-serif;
+    border-style:solid;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 37px;
+    cursor: pointer;
+}
+
+button.boton_inicio:hover{
+    background-color:#DDAE64;
+    color:azure;
+}
+
+#menu_logo{
+    text-align: left;
+}
+
+div.boton_inicio{
+    text-align: right;
+}
+
+div.inf_buscar{
+    text-align: right;
+}
+
+.logo_user{
+    text-align: right;
+}
+
+#bloque_inicio{
+    height: 113px;
+}
+
+li.nav-item{
+    margin-left: 15px;
+}
