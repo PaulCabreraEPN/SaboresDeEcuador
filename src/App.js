@@ -1,18 +1,21 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import { Menu } from './componentes/menu.js';
+import { Cabecera } from './componentes/cabecera.js';
+import { Pie } from './componentes/pie.js';
+import Registro from './componentes/registro.js';
+
 import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg';
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
 import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 
-import './App.css';
-import { Menu } from './componentes/menu.js';
-import { Cabecera } from './componentes/cabecera.js';
-import { Pie } from './componentes/pie.js';
-
-function App() {
+function HomePage() {
   return (
-    <div className="App">
-      <Cabecera/>
-      <Menu/>
+    <>
+    <Cabecera />
+    <Menu/>
       <body class='cuerpo'>
         <div id='promos'>
           <div class="container">
@@ -33,7 +36,7 @@ function App() {
           </div>
         </div>
         <div class="Invitacion">
-          <br></br>
+      
           <h1>Conoce nuestro menú</h1>
           <p>Te invitamos a explorar nuestra marca con deliciosos productos</p>
           <button type='buttom' class='botones'>Ver Menú</button>
@@ -41,8 +44,18 @@ function App() {
         </div>
       </body>
       <Pie/>
-      
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/registro' element={<Registro />} />
+      </Routes>
+    </Router>
   );
 }
 
