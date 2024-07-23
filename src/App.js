@@ -32,7 +32,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div class="Invitacion">
           <br></br>
           <h1>Conoce nuestro menú</h1>
           <p>Te invitamos a explorar nuestra marca con deliciosos productos</p>
