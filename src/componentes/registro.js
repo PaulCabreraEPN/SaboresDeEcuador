@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Registro.css';
-import logo from './componentes/imagenes/MainLogo.png';
+import logo from './imagenes/MainLogo.png';
 
 const Registro = () => {
     const validateForm = () => {
