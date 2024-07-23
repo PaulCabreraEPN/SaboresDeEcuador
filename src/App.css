@@ -37,24 +37,38 @@
   }
 }
 
-#promos{
+#promos {
   background-color: #000018;
   padding-bottom: 5%;
 }
 
-.promocional{
-  
-  height: 420px;
-  margin-top: 20%;
+.promocional {
+  height: auto;
+  max-width: 100%;
   border-radius: 20px;
-  
+  margin-top: 20px;
 }
 
-.promocional:hover{
-  box-shadow: 0 .25rem 5rem #da9a33 ;
-  
+.promocional:hover {
+  box-shadow: 0 .25rem 5rem #da9a33;
 }
 
-.Invitacion{
+.Invitacion {
   text-align: center;
+  padding: 20px;
+}
+
+.botones {
+  padding-top: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #DDAE64;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+}
+
+.botones:hover {
+  background-color: #c2821c;
 }

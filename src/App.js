@@ -14,36 +14,32 @@ import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 function HomePage() {
   return (
     <>
-    <Cabecera />
-    <Menu/>
-      <body class='cuerpo'>
-        <div id='promos'>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <img src={promo3} alt="logo" class='promocional'/>
-              </div>
-              <div class="col">
-                <img src={promo2} alt="logo" class='promocional'/>
-              </div>
-              <div class="col">
-                <img src={promo1} alt="logo" class='promocional'/>
-              </div>
-              <div class="col">
-                <img src={promo4} alt="logo" class='promocional'/>
-              </div>
+      <Cabecera />
+      <Menu />
+      <main className='cuerpo'>
+        <div id='promos' className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-6 col-lg-3'>
+              <img src={promo3} alt="Promo 3" className='promocional' />
+            </div>
+            <div className='col-12 col-md-6 col-lg-3'>
+              <img src={promo2} alt="Promo 2" className='promocional' />
+            </div>
+            <div className='col-12 col-md-6 col-lg-3'>
+              <img src={promo1} alt="Promo 1" className='promocional' />
+            </div>
+            <div className='col-12 col-md-6 col-lg-3'>
+              <img src={promo4} alt="Promo 4" className='promocional' />
             </div>
           </div>
         </div>
-        <div class="Invitacion">
-      
+        <div className='Invitacion'>
           <h1>Conoce nuestro menú</h1>
           <p>Te invitamos a explorar nuestra marca con deliciosos productos</p>
-          <button type='buttom' class='botones'>Ver Menú</button>
-          <br></br>
+          <button type='button' className='botones'>Ver Menú</button>
         </div>
-      </body>
-      <Pie/>
+      </main>
+      <Pie />
     </>
   );
 }

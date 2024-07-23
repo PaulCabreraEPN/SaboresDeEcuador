@@ -1,19 +1,27 @@
-.pie{
+.pie {
     margin-top: 2%;
     padding: 2.5%;
-    padding-bottom: 1%;
-    background-color:#DDAE64; ;
-}
-
-.icono{
+    background-color: #DDAE64;
+  }
+  
+  .icono {
     width: 50px;
-}
-
-.politicos{
+  }
+  
+  .politicos {
     margin-top: 4%;
     color: azure;
-}
-
-.Fin{
+    text-align: center;
+  }
+  
+  .Fin {
     color: azure;
-}
+    text-decoration: none;
+  }
+  
+  @media (max-width: 576px) {
+    .icono {
+      width: 40px;
+    }
+  }
+  
