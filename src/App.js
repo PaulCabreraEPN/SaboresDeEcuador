@@ -5,6 +5,7 @@ import { Menu } from './componentes/menu.js';
 import { Cabecera } from './componentes/cabecera.js';
 import { Pie } from './componentes/pie.js';
 import Registro from './componentes/registro.js';
+import { Productos } from './componentes/Productos.js';
 
 import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg';
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
@@ -50,9 +51,12 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/registro' element={<Registro />} />
+        <Route path='/Productos' element={<Productos />} />
       </Routes>
     </Router>
   );
 }
+
+
 
 export default App;

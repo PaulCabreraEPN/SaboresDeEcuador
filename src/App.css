@@ -54,8 +54,9 @@
 }
 
 .Invitacion {
+  background-color: azure;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 .botones {

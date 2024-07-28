@@ -1,9 +1,12 @@
 .menu{
+    font-size: large;
     background-color:#DDAE64;
     color:azure;
     display: grid;
     grid-template-columns: 25% 75% ;
-    padding-left: 0.5%;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #titulo{
@@ -25,14 +28,14 @@ a.nav-link:hover{
 }
 
 .botones{
-    padding-top: 100px;
+    padding: 0%;
+    width: 150px;
+    height: 50px;
+    place-items: center;
     border-radius: 25px;
     text-decoration: none;
     color: whitesmoke;
     background-color:#DDAE64;
-    padding: .8%;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
     border: none;
 }

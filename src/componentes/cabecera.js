@@ -11,6 +11,8 @@ export const Cabecera = () => {
     navigate('/registro');
   };
 
+  
+
   return (
     <div className='cabecera'>
       <div id="menu_logo">

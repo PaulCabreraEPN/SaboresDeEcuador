@@ -8,15 +8,15 @@ export const Pie = () => {
   return (
     <div class='pie'>
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row ">
+                <div class="col justify-content-center d-flex ">
                     <a href="https://www.facebook.com/?locale=es_LA"><img src={facebook} alt="logo" class='icono'/></a>
                 </div>
-                <div class="col">
-                <a href="https://www.instagram.com"><img src={instagram} alt="logo" class='icono'/></a>
+                <div class="col justify-content-center d-flex">
+                    <a href="https://www.instagram.com"><img src={instagram} alt="logo" class='icono'/></a>
                 </div>
-                <div class="col">
-                <a href="https://www.youtube.com/"><img src={youtube} alt="logo" class='icono'/></a>
+                <div class="col justify-content-center d-flex">
+                    <a href="https://www.youtube.com/"><img src={youtube} alt="logo" class='icono'/></a>
                 </div>
             </div>
             <div class='politicos'>

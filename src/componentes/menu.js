@@ -1,7 +1,14 @@
-import React from 'react'
-import "./menu.css"
+import React from 'react';
+import "./menu.css";
+import { useNavigate } from 'react-router-dom';
 
 export const Menu = () => {
+    const navigate = useNavigate();
+    
+    const handleLoginClickPro = () => {
+        navigate('/Productos');
+      };
+
   return (
     <div class='menu'>
         <div id='titulo' class='d-flex align-items-center'>
@@ -12,7 +19,7 @@ export const Menu = () => {
                 <div class='col' >
                     <ul class="nav nav-pills justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Menú</a>
+                            <a class="nav-link " aria-current="page" onClick={handleLoginClickPro}>Menú</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Promociones</a>
