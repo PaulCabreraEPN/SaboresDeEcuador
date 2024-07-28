@@ -4,10 +4,14 @@ import { useNavigate } from 'react-router-dom';
 
 export const Menu = () => {
     const navigate = useNavigate();
-    
+
     const handleLoginClickPro = () => {
         navigate('/Productos');
-      };
+    };
+
+    const handleLoginClickSob = () => {
+        navigate('/Sobre_Nosotros');
+    };
 
   return (
     <div class='menu'>
@@ -25,7 +29,7 @@ export const Menu = () => {
                             <a class="nav-link" href="#">Promociones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                            <a class="nav-link" onClick={handleLoginClickSob}>Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Contactos</a>
