@@ -5,6 +5,7 @@ import { Menu } from './componentes/menu.js';
 import { Cabecera } from './componentes/cabecera.js';
 import { Pie } from './componentes/pie.js';
 import Registro from './componentes/registro.js';
+import Login from './componentes/login.js';
 import { Productos } from './componentes/Productos.js';
 import { Sobre_Nosotros } from './componentes/Sobre_Nosotros.js';
 
@@ -52,6 +53,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/registro' element={<Registro />} />
+        <Route path='/login' element={<Login />}  />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
       </Routes>

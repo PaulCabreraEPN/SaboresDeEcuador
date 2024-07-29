@@ -8,10 +8,10 @@ export const Cabecera = () => {
   const navigate = useNavigate();
 
   const handleLoginClick = () => {
-    navigate('/registro');
+    navigate('/login');
   };
 
-  
+
 
   return (
     <div className='cabecera'>

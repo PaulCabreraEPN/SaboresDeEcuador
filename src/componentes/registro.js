@@ -80,7 +80,7 @@ const Registro = () => {
     };
 
     const handleCancel = () => {
-        navigate('/');
+        navigate('/login');
     };
 
     return (
