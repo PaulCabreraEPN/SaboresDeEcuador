@@ -75,3 +75,24 @@
 .botones:hover {
   background-color: #c2821c;
 }
+
+h4{
+  color: azure;
+}
+
+.botonProm{
+  padding-top: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #DDAE64;
+  padding: 10px 20px;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: none;
+}
+
+#cabezaProm{
+  text-align: center;
+}

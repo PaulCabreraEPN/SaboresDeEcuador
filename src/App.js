@@ -8,6 +8,7 @@ import Registro from './componentes/registro.js';
 import Login from './componentes/login.js';
 import { Productos } from './componentes/Productos.js';
 import { Sobre_Nosotros } from './componentes/Sobre_Nosotros.js';
+import { useNavigate } from 'react-router-dom';
 
 import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg';
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
@@ -15,13 +16,31 @@ import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
 
+
 function HomePage() {
+  const navigate = useNavigate();
+
+  const handleLoginClickProm = () => {
+    navigate('/Promociones');
+  };
+  
   return (
     <>
       <Cabecera />
       <Menu />
       <main className='cuerpo'>
         <div id='promos' className='container'>
+          <div className='row'>
+            <div className='col-9'>
+              <br></br>
+              <h4> Disfruta de nuestras promociones </h4>
+            </div>
+            <div className='col-3 justify-content-center' id='cabezaProm'>
+            <br></br>
+              <button type='button' onClick={handleLoginClickProm} className='botonProm'>Ver todas las Pomociones</button>
+            </div>
+
+          </div>
           <div className='row'>
             <div className='col-12 col-md-6 col-lg-3'>
               <img src={promo3} alt="Promo 3" className='promocional' />
