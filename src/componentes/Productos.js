@@ -1,10 +1,8 @@
 import React from 'react';
 import  {Menu}  from './menu';
 import logo from '../componentes/imagenes/MainLogo.png';
-
 import imagen1 from '../componentes/imagenes1/producto11.jpeg';
 import imagen2 from '../componentes/imagenes1/producto2.jpeg';
-
 import imagen4 from '../componentes/imagenes1/Cafe_con_crema_batida.jpeg';
 import imagen5 from '../componentes/imagenes1/frapuchino.jpeg';
 import imagen6 from '../componentes/imagenes1/americano.jpg';
@@ -32,6 +30,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Productos = () => {
     
