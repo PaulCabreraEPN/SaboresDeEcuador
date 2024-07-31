@@ -1,10 +1,10 @@
-import React from 'react'
-import { Menu } from './menu.js'
-import logo from './imagenes/MainLogo.png'
 import React from 'react';
-import imagen1 from '../componentes/imagenes1/producto1.jpeg';
+import  {Menu}  from './menu';
+import logo from '../componentes/imagenes/MainLogo.png';
+
+import imagen1 from '../componentes/imagenes1/producto11.jpeg';
 import imagen2 from '../componentes/imagenes1/producto2.jpeg';
-import imagen3 from '../componentes/imagenes1/producto3.jpeg';
+
 import imagen4 from '../componentes/imagenes1/Cafe_con_crema_batida.jpeg';
 import imagen5 from '../componentes/imagenes1/frapuchino.jpeg';
 import imagen6 from '../componentes/imagenes1/americano.jpg';
@@ -18,7 +18,7 @@ import imagen13 from '../componentes/imagenes1/muffin.jpeg';
 import imagen14 from '../componentes/imagenes1/galletas.jpeg';
 import imagen15 from '../componentes/imagenes1/manzana.jpeg';
 import imagen16 from '../componentes/imagenes1/macarons.jpeg';
-import imagen17 from '../componentes/imagenes1/panna.jpeg';
+import imagen17 from '../componentes/imagenes1/panna.jpg';
 import imagen18 from '../componentes/imagenes1/tiramisu.jpeg';
 import imagen19 from '../componentes/imagenes1/zanahoria.jpeg';
 import imagen20 from '../componentes/imagenes1/zona1.jpeg';
