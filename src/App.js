@@ -13,6 +13,7 @@ import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg'
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
 import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
+import { Promociones } from './componentes/Promociones.js';
 
 function HomePage() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path='/login' element={<Login />}  />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
+        <Route path='/Promociones' element={<Promociones />} />
       </Routes>
     </Router>
   );

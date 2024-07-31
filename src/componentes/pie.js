@@ -1,8 +1,8 @@
 import React from 'react'
 import './pie.css'
-import facebook from './imagenes/Iconos/facebook.ico';
-import instagram from './imagenes/Iconos/instagram.ico';
-import youtube from './imagenes/Iconos/youtube.ico';
+import facebook from './imagenes/Iconos/facebook.png';
+import instagram from './imagenes/Iconos/instagram.png';
+import youtube from './imagenes/Iconos/youtube.png';
 
 export const Pie = () => {
   return (

@@ -9,6 +9,10 @@ export const Menu = () => {
         navigate('/Productos');
     };
 
+    const handleLoginClickProm = () => {
+        navigate('/Promociones');
+    };
+
     const handleLoginClickSob = () => {
         navigate('/Sobre_Nosotros');
     };
@@ -26,7 +30,7 @@ export const Menu = () => {
                             <a class="nav-link " aria-current="page" onClick={handleLoginClickPro}>Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promociones</a>
+                            <a class="nav-link" onClick={handleLoginClickProm}>Promociones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" onClick={handleLoginClickSob}>Sobre Nosotros</a>

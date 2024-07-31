@@ -11,12 +11,10 @@ export const Cabecera = () => {
     navigate('/login');
   };
 
-
-
   return (
     <div className='cabecera'>
       <div id="menu_logo">
-        <img src={logo} alt="logo" width={'110px'} />
+        <a href='http://localhost:3000/'><img src={logo} alt="logo" width={'110px'} /></a>
       </div>
       <div className="container" id='cabecera'>
         <div className='row'>
@@ -29,7 +27,7 @@ export const Cabecera = () => {
                 <button type='button' className='boton_inicio' onClick={handleLoginClick}>Iniciar sesión</button>
               </li>
               <li className="nav-item">
-                <img src={user} alt="logo" width={'90px'} />
+                <a onClick={handleLoginClick}><img src={user} alt="logo" width={'90px'} /></a>
               </li>
             </ul>
           </div>
