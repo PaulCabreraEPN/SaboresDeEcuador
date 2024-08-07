@@ -15,7 +15,7 @@ import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
 import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
-
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function HomePage() {
   const navigate = useNavigate();
