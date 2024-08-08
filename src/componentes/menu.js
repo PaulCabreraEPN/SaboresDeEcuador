@@ -1,6 +1,7 @@
 import React from 'react';
 import "./menu.css";
 import { useNavigate } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 export const Menu = () => {
     const navigate = useNavigate();
@@ -17,31 +18,27 @@ export const Menu = () => {
         navigate('/Sobre_Nosotros');
     };
 
+    const handleLoginClickI = () => {
+        navigate('/' );
+    };
+
   return (
     <div class='menu'>
-        <div id='titulo' class='d-flex align-items-center'>
-            <b>COFFEE & DREAMS</b>
-        </div>
-        <div class='container'>
-            <div class='row'>
-                <div class='col' >
-                    <ul class="nav nav-pills justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" onClick={handleLoginClickPro}>Menú</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick={handleLoginClickProm}>Promociones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick={handleLoginClickSob}>Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <Navbar className="navbar-custom" variant="dark" expand="lg">
+        
+        <Navbar.Brand href="#home">COFFEE & DREAMS</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" >
+          <Nav className="navbar-collapse-left">
+            <Nav.Link className="nav-link-custom" onclick={handleLoginClickI}>Inicio</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro}>Menú</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm}>Promociones</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob}>Sobre Nosotros</Nav.Link>
+            <Nav.Link className="nav-link-custom" href="#pricing">Contactos</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      
+    </Navbar>
     </div>
     
   )

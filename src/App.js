@@ -15,7 +15,9 @@ import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
 import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function HomePage() {
   const navigate = useNavigate();
@@ -31,15 +33,14 @@ function HomePage() {
       <main className='cuerpo'>
         <div id='promos' className='container'>
           <div className='row'>
-            <div className='col-9'>
+            <div className='col-6'>
               <br></br>
               <h4> Disfruta de nuestras promociones </h4>
             </div>
-            <div className='col-3 justify-content-center' id='cabezaProm'>
+            <div className='col-6' id='cabezaProm'>
             <br></br>
               <button type='button' onClick={handleLoginClickProm} className='botonProm'>Ver todas las Pomociones</button>
             </div>
-
           </div>
           <div className='row'>
             <div className='col-12 col-md-6 col-lg-3'>
@@ -63,44 +64,7 @@ function HomePage() {
         </div>
       </main>
       <Pie />
-      <div class='menuNav'>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></hr></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-      </div>
+      
       
     </>
   );

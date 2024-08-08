@@ -1,13 +1,19 @@
-.menu{
-    font-size: large;
-    background-color:#DDAE64;
-    color:azure;
-    display: grid;
-    grid-template-columns: 25% 75% ;
-    padding-left: 1.5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+.navbar-custom {
+    background-color: #DDAE64 !important; /* Cambia el color de fondo */
+    margin: 0;
 }
+
+
+.navbar-collapse-left {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%; 
+}
+
+.nav-link-custom{
+    margin-right: 20px;
+}
+  
 
 #titulo{
     text-align: left;
