@@ -29,26 +29,37 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { Pie } from '../componentes/pie';
+import { Container as BootstrapContainer } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export const Productos = () => {
-    
+ 
     return (
     <div>
-      <div> <img src={logo} alt="logo" width={'110px'} /></div>
+    
+      <div><img src={logo} alt="logo" width={'110px'} /></div>
       <Menu/>
-      <br></br>
-      <div class="row">
-  <div class="col-4">
-  <div className="position-fixed" style={{ top: '50%', right: '20px', transform: 'translateY(-50%)' }}>
-  <div id="list-example" className="list-group" style={{ width: '250px' }}>
-    <a className="list-group-item list-group-item-action" href="#list-item-1">Cafes</a>
-    <a className="list-group-item list-group-item-action" href="#list-item-2">Postres y otros</a>
-    <a className="list-group-item list-group-item-action" href="#list-item-3">Reservaciones</a>
-    <a className="list-group-item list-group-item-action" href="#list-item-4">Menu Digital</a>
-  </div>
-</div>
-  </div>
+      <Container className="text-center" >
+      <Navbar style={{ backgroundColor: '#000018' }} variant="dark" sticky="top">
+            <Container>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#list-item-1">Cafes</Nav.Link>
+                        <Nav.Link href="#list-item-2">Postres y otros</Nav.Link>
+                        <Nav.Link href="#list-item-3">Reservaciones</Nav.Link>
+                        <Nav.Link href="#list-item-4">Menu Digital</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+ 
+            <br></br>
+            <div className="row">
+                
   <div className="col-md-9 ms-2">
       <div
         data-bs-spy="scroll"
@@ -378,6 +389,8 @@ export const Productos = () => {
     </div>
   </div>
 </div>
+</Container>
+<br></br>
 <Pie/>
     </div>
     );
