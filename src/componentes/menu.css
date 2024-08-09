@@ -49,3 +49,7 @@ a.nav-link:hover{
 .botones:hover{
     background-color: #c2821c;
 }
+
+#carrito {
+    margin-left: auto; /* Empuja el carrito hacia la derecha */
+  }
