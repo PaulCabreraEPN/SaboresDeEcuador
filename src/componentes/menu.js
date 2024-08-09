@@ -1,10 +1,17 @@
 import React from 'react';
 import "./menu.css";
 import { useNavigate } from 'react-router-dom';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar} from 'react-bootstrap';
 import carrito from './imagenes/Iconos/carrito.png'
 
+
 export const Menu = () => {
+
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/MyCarrito');
+  };
 
   return (
     <div class='menu'>
@@ -14,6 +21,7 @@ export const Menu = () => {
         <Navbar.Brand href="#home" id='carrito'><a 
               className="ml-3" 
               href="#" 
+              onClick={handleLoginClick}
             >
               <img src={carrito} alt="Usuario" width="40" />
         </a></Navbar.Brand>
