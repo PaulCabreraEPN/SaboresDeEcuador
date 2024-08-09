@@ -16,6 +16,17 @@ const Login=() =>{
     return(
         <div >
             <img src={logo} alt="logo" width={'90px'} />
+            <div className="combobox-container mb-4 row">
+                <label htmlFor="userType" className="col-sm-1 col-form-label">Tipo de Usuario</label>
+                <div className="col-sm-2">
+                    <select className="form-control" id="userType">
+                        <option value="administrador">Administrador</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="vendedor">Vendedor</option>
+                        <option value="repartidor">Repartidor</option>
+                    </select>
+                </div>
+            </div>
 
             <div>
             <img src={user} alt="user" className="user" width={'90px'} />
@@ -33,6 +44,8 @@ const Login=() =>{
                         <input type="password" class="form-control" id="inputPassword"/>
                         </div>
                     </div>
+
+
                     <button type="submit" className="btn btn-success">Iniciar Sesion</button>
                                     <br /><br />
                                     <button type="button" onClick={handleCancel} className="btn btn-secondary">Cancelar</button>
