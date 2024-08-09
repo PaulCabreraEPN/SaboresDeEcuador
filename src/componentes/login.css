@@ -52,10 +52,6 @@ a:hover {
     color: white;
 }
 
-.combobox-container label {
-
-}
-
 .combobox-container select {
     max-width: 200px;
 }
