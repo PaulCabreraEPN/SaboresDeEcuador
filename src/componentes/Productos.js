@@ -60,7 +60,7 @@ export const Productos = () => {
             <br></br>
             <div className="row">
                 
-  <div className="col-md-9 ms-2">
+  <div className="col-md-12 ms-2">
       <div
         data-bs-spy="scroll"
         data-bs-target="#list-example"
