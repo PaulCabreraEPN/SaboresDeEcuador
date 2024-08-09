@@ -47,6 +47,7 @@ export const Micarrusel = () => {
     </Carousel>
         </div>
 
+    
     </div>
   )
 }
