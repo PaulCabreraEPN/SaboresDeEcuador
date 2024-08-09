@@ -1,5 +1,6 @@
 import React from 'react';
 import  {Menu}  from './menu';
+import { Cabecera } from './cabecera';
 import logo from './imagenes/MainLogo.png';
 import imagen1 from './imagenes1/producto11.jpg';
 import imagen2 from './imagenes1/producto2.jpg';
@@ -40,7 +41,7 @@ export const Productos = () => {
     return (
     <div>
     
-      <div><img src={logo} alt="logo" width={'110px'} /></div>
+      <Cabecera/>
       <Menu/>
       <Container className="text-center" >
       <Navbar style={{ backgroundColor: '#000018' }} variant="dark" sticky="top">
