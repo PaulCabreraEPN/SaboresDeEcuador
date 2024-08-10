@@ -82,7 +82,7 @@ function App() {
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
         <Route path='/Promociones' element={<Promociones />} />
-        <Route path='/Carrito' element={<MyCarrito/>} />
+        <Route path='/MyCarrito' element={<MyCarrito/>} />
       </Routes>
     </Router>
   );
