@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import  {Menu}  from './menu';
 import { Cabecera } from './cabecera';
 import logo from './imagenes/MainLogo.png';
@@ -27,7 +27,7 @@ import imagen23 from './imagenes1/zona4.jpg';
 import imagen24 from './imagenes1/zona5.jpg';
 import imagen25 from './imagenes1/zona6.jpg';
 import Container from 'react-bootstrap/Container';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image, Modal } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { Pie } from '../componentes/pie';
 import { Container as BootstrapContainer } from 'react-bootstrap';
@@ -37,7 +37,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export const Productos = () => {
- 
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', description: '' });
+
+  const handleShow = (src, alt, description) => {
+    setSelectedImage({ src, alt, description });
+    setShowModal(true);
+  };
+
+  const handleClose = () => setShowModal(false);
+
     return (
     <div>
     
@@ -77,6 +87,7 @@ export const Productos = () => {
               src={imagen1}
               alt="Café con leche"
               style={{ maxWidth: '100%', height: 'auto' }}
+              onClick={() => handleShow(imagen1, 'Café con leche', 'Espresso combinado con una generosa cantidad de leche vaporizada, creando una bebida suave y cremosa con un equilibrio perfecto entre café y leche.')}
             />
             <h5 className="text-white fw-bold">Café con leche</h5>
             <p className='text-white'>
@@ -89,6 +100,7 @@ export const Productos = () => {
               src={imagen2}
               alt="Capuchino"
               style={{ maxWidth: '100%', height: 'auto' }}
+              onClick={() => handleShow(imagen2, 'Capuchino', 'Un café con una capa cremosa de espuma de leche, ideal para quienes disfrutan de un sabor equilibrado entre el espresso y la leche.')}
             />
             <h5 className="fw-bold text-white">Capuchino</h5>
             <p className='text-white'>
@@ -101,6 +113,8 @@ export const Productos = () => {
               src={imagen4}
               alt="Café con crema batida"
               style={{ maxWidth: '100%', height: 'auto' }}
+              onClick={() => handleShow(imagen4, 'Café con crema batida', 'Un espresso rico y fuerte cubierto con una generosa porción de crema batida, perfecto para un toque indulgente y suave.')}
+
             />
             <h5 className="text-white fw-bold">Café con crema batida</h5>
             <p className='text-white'>
@@ -116,6 +130,8 @@ export const Productos = () => {
           src={imagen5}
           alt="Frapuchino"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen5, 'Frapuchino', 'Una bebida helada y refrescante hecha con café, leche, hielo y un toque dulce, todo mezclado hasta alcanzar una textura cremosa.')}
+
         />
         <h5 className="text-white fw-bold">Frapuchino</h5>
         <p className='text-white'>
@@ -128,6 +144,8 @@ export const Productos = () => {
           src={imagen6}
           alt="Café Americano"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen6, 'Café Americano', 'Un espresso alargado con agua caliente, resultando en una bebida suave y ligera con un sabor más suave que el espresso tradicional.')}
+
         />
         <h5 className="text-white fw-bold">Café Americano</h5>
         <p className='text-white'>
@@ -140,6 +158,8 @@ export const Productos = () => {
           src={imagen7}
           alt="Café con almendras"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen7, 'Café con almendras', 'Un café aromático combinado con leche de almendras, ofreciendo un sabor delicado y ligeramente dulce con un toque de nuez.')}
+
         />
         <h5 className="text-white fw-bold">Café con almendras</h5>
         <p className='text-white'>
@@ -155,6 +175,8 @@ export const Productos = () => {
           src={imagen8}
           alt="Mochaccino"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen8, 'Mochaccino', 'Una deliciosa combinación de espresso, chocolate y leche vaporizada, coronada con una capa de espuma suave y cremosa.')}
+
         />
         <h5 className="text-white fw-bold">Mochaccino</h5>
         <p className='text-white'>
@@ -167,6 +189,8 @@ export const Productos = () => {
           src={imagen9}
           alt="Café irlandés"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen9, 'Café irlandés', 'Un café fuerte mezclado con whisky irlandés y azúcar, cubierto con una capa de crema ligeramente batida para un toque indulgente.')}
+
         />
         <h5 className="text-white fw-bold">Café irlandés</h5>
         <p className='text-white'>
@@ -179,6 +203,8 @@ export const Productos = () => {
           src={imagen10}
           alt="Affogato"
           style={{ maxWidth: '100%', height: 'auto' }}
+          onClick={() => handleShow(imagen10, 'Affogato', 'Un postre italiano que combina un espresso caliente vertido sobre una bola de helado de vainilla, creando un delicioso contraste entre lo frío y lo caliente.')}
+
         />
         <h5 className="text-white fw-bold">Affogato</h5>
         <p className='text-white'>
@@ -194,6 +220,8 @@ export const Productos = () => {
             src={imagen11}
             alt="Brownie de chocolate"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen11, 'Brownie de chocolate', 'Un postre denso y húmedo, hecho con chocolate derretido, ofreciendo una textura rica y un sabor intenso para los amantes del chocolate.')}
+
           />
           <h5 className="text-white fw-bold">Brownie de chocolate</h5>
           <p className='text-white'>
@@ -206,6 +234,8 @@ export const Productos = () => {
             src={imagen12}
             alt="Tarta de queso"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen12, 'Tarta de queso', 'Un postre cremoso y suave hecho con queso crema, sobre una base de galleta, perfecto para un final ligero y delicioso.')}
+
           />
           <h5 className="text-white fw-bold">Tarta de queso</h5>
           <p className='text-white'>
@@ -218,6 +248,8 @@ export const Productos = () => {
             src={imagen13}
             alt="Muffin de arándanos"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen13, 'Muffin de arándanos', 'Un muffin esponjoso y dulce, repleto de arándanos frescos, ideal para un desayuno o merienda reconfortante.')}
+
           />
           <h5 className="text-white fw-bold">Muffin de arándanos</h5>
           <p className='text-white'>
@@ -233,6 +265,8 @@ export const Productos = () => {
             src={imagen14}
             alt="Galletas con chispas de chocolate"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen14, 'Galletas con chispas de chocolate', 'Deliciosas galletas crujientes por fuera y suaves por dentro, llenas de chispas de chocolate derretido, perfectas para cualquier momento del día.')}
+
           />
           <h5 className="text-white fw-bold">Galletas con chispas de chocolate</h5>
           <p className='text-white'>
@@ -245,6 +279,8 @@ export const Productos = () => {
             src={imagen15}
             alt="Tarta de manzana"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen15, 'Tarta de manzana', 'Un postre clásico que combina manzanas frescas especiadas con canela, envueltas en una masa dorada y crujiente, ideal para los amantes de los sabores tradicionales.')}
+
           />
           <h5 className="text-white fw-bold">Tarta de manzana</h5>
           <p className='text-white'>
@@ -257,6 +293,8 @@ export const Productos = () => {
             src={imagen16}
             alt="Macarons"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen16, 'Macarons', 'Delicados y coloridos pasteles franceses hechos con merengue, rellenos de crema o ganache, perfectos para un bocado dulce y elegante.')}
+
           />
           <h5 className="text-white fw-bold">Macarons</h5>
           <p className='text-white'>
@@ -272,6 +310,8 @@ export const Productos = () => {
             src={imagen17}
             alt="Panna cotta"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen17, 'Panna cotta', 'Un postre italiano suave y cremoso, hecho con nata y gelatina, a menudo servido con una salsa de frutas o caramelo para un contraste dulce.')}
+
           />
           <h5 className="text-white fw-bold">Panna cotta</h5>
           <p className='text-white'>
@@ -284,6 +324,8 @@ export const Productos = () => {
             src={imagen18}
             alt="Tiramisu"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen18, 'Tiramisu', 'Un postre italiano clásico, compuesto por capas de bizcochos empapados en café y una suave mezcla de queso mascarpone, espolvoreado con cacao.')}
+
           />
           <h5 className="text-white fw-bold">Tiramisu</h5>
           <p className='text-white'>
@@ -296,6 +338,8 @@ export const Productos = () => {
             src={imagen19}
             alt="Pastel de zanahoria"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen19, 'Pastel de zanahoria', 'Un pastel húmedo y especiado, hecho con zanahorias ralladas y cubierto con un glaseado de queso crema, ofreciendo un equilibrio perfecto entre dulzura y especias.')}
+
           />
           <h5 className="text-white fw-bold">Pastel de zanahoria</h5>
           <p className='text-white'>
@@ -312,6 +356,8 @@ export const Productos = () => {
             src={imagen20}
             alt="Rincón Vintage"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen20, 'Rincón Vintage', 'Un acogedor rincón decorado con piezas de época y muebles retro, ofreciendo un ambiente nostálgico ideal para disfrutar de un café relajante.')}
+
           />
           <h5 className="text-white fw-bold">Rincón Vintage</h5>
           <p className='text-white'>
@@ -324,6 +370,8 @@ export const Productos = () => {
             src={imagen21}
             alt="Sala de Estilo Industrial"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen21, 'Sala de Estilo Industrial', 'Un espacio moderno con elementos de metal y madera, grandes ventanales y una decoración minimalista, perfecto para disfrutar de un café en un ambiente contemporáneo.')}
+
           />
           <h5 className="text-white fw-bold">Sala de Estilo Industrial</h5>
           <p className='text-white'>
@@ -336,6 +384,8 @@ export const Productos = () => {
             src={imagen22}
             alt="Espacio Tropical"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen22, 'Espacio Tropical', 'Un ambiente fresco y vibrante, decorado con plantas tropicales y colores brillantes, ideal para disfrutar de un café rodeado de naturaleza y buen clima.')}
+
           />
           <h5 className="text-white fw-bold">Espacio Tropical</h5>
           <p className='text-white'>
@@ -351,6 +401,8 @@ export const Productos = () => {
             src={imagen23}
             alt="Zona Bohemia"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen23, 'Zona Bohemia', 'Un área acogedora y artística, decorada con obras de arte local y un ambiente relajado, perfecta para disfrutar de un café mientras se inspira en la creatividad.')}
+
           />
           <h5 className="text-white fw-bold">Zona Bohemia</h5>
           <p className='text-white'>
@@ -363,6 +415,8 @@ export const Productos = () => {
             src={imagen24}
             alt="Rincón Literario"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen24, 'Rincón Literario', 'Un espacio acogedor lleno de estanterías de libros, donde los amantes de la lectura pueden disfrutar de un buen café mientras se sumergen en sus historias favoritas.')}
+
           />
           <h5 className="text-white fw-bold">Rincón Literario</h5>
           <p className='text-white'>
@@ -375,6 +429,8 @@ export const Productos = () => {
             src={imagen25}
             alt="Sala de Inspiración Zen"
             style={{ maxWidth: '100%', height: 'auto' }}
+            onClick={() => handleShow(imagen25, 'Sala de Inspiración Zen', 'Un ambiente tranquilo y sereno, decorado con elementos naturales y suaves tonos, ideal para relajarse y disfrutar de un café en paz y armonía.')}
+
           />
           <h5 className="text-white fw-bold">Sala de Inspiración Zen</h5>
           <p className='text-white'>
@@ -393,6 +449,18 @@ export const Productos = () => {
 </Container>
 <br></br>
 <Pie/>
+<Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedImage.alt}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={selectedImage.src} alt={selectedImage.alt} style={{ width: '100%' }} />
+          <p>{selectedImage.description}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <button onClick={handleClose} style={{ backgroundColor: 'green', color: 'white', display: 'block', margin: '0 auto' }}>Comprar</button>
+        </Modal.Footer>
+      </Modal>
     </div>
     );
 }
