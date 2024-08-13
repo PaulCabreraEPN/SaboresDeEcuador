@@ -17,7 +17,8 @@ import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MyCarrito } from './componentes/MyCarrito.js';
-import { InicioMarcas } from './componentes/inicioMarcas.js'; 
+import InicioMarcas from './componentes/inicioMarcas';
+
 
 
 function HomePage() {
