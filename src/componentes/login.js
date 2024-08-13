@@ -49,7 +49,7 @@ const Login = () => {
             if (paraTipoUsuario === "cliente") {
                 window.location.href = "/"; 
             } else if (paraTipoUsuario === "administrador") {
-                window.location.href = "/inicioMarcas";
+                window.location.href = "/InicioMarcas";
             }
         }
     };
