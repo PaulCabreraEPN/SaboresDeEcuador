@@ -6,7 +6,7 @@ import youtube from './imagenes/Iconos/youtube.png';
 
 export const Pie = () => {
   return (
-    <div className='pie'>
+    <div className='mipie'>
         <div class="container" id='pie'>
             <div class="row ">
                 <div class="col justify-content-center d-flex ">
