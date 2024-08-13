@@ -13,6 +13,7 @@ const Login = () => {
         navigate('/registro');
     };
 
+    
     const handleCancel = () => {
         navigate('/');
     };
