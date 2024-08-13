@@ -13,12 +13,13 @@ import imagen6 from './imagenes1/americano.jpg';
 import etiqueta10 from './imagenes/etiquetas/10%.jpg'
 import etiqueta15 from './imagenes/etiquetas/15%.jpg'
 import etiqueta50 from './imagenes/etiquetas/50%.jpg'
+import './Promociones.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Promociones = () => {
   return (
-    <div>
+    <div id='promociones'>
         <Cabecera></Cabecera>
         <Menu></Menu>
         <br></br>

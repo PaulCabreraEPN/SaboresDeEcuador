@@ -19,7 +19,7 @@ function MyModal({imagen, titulo, etiqueta, info, precio, desc}) {
 
         <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1"><br></br>{titulo}</h5>
-                <small><img src={etiqueta} alt="Modal content" height={'50px'}/></small>
+                <small>Proximamnete</small>
         </div>
         <div>
           <p>{info}</p>
