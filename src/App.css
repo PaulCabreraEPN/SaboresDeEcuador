@@ -68,7 +68,7 @@
   border-radius: 25px;
   text-decoration: none;
   color: whitesmoke;
-  background-color: #DDAE64;
+  background-color: #a65811;
   padding: 10px 20px;
   text-align: center;
   padding-top: 2.5%;
@@ -77,7 +77,7 @@
 }
 
 .botones:hover {
-  background-color: #c2821c;
+  background-color: #db8e46;
 }
 
 h4{
@@ -90,6 +90,19 @@ h4{
   text-decoration: none;
   color: whitesmoke;
   background-color: #a65811;
+  padding: 10px 20px;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: none;
+}
+
+.botonProm:hover{
+  padding-top: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #db8e46;
   padding: 10px 20px;
   text-align: center;
   padding-top: 2.5%;

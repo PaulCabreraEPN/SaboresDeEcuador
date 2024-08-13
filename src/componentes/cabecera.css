@@ -37,7 +37,7 @@ button.boton_inicio{
   border-radius: 25px;
   text-decoration: none;
   color: whitesmoke;
-  background-color:#a65811;;
+  background-color:#a65811;
   padding: 10px 20px;
   text-align: center;
   padding-top: 2.5%;
@@ -46,5 +46,5 @@ button.boton_inicio{
 }
 
 #boton_inicio:hover{
-    background-color: #c2821c;
+    background-color: #db8e46;
 }
