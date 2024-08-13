@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f1ead7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,8 +37,12 @@
   }
 }
 
+.cuerpo{
+  background-color: #f1ead7;
+}
+
 #promos {
-  background-color: #000018;
+  background-color: #f1ead7;
   padding-bottom: 5%;
 }
 
@@ -77,7 +81,7 @@
 }
 
 h4{
-  color: azure;
+  color: #9e5d28;
 }
 
 .botonProm{
@@ -85,7 +89,7 @@ h4{
   border-radius: 25px;
   text-decoration: none;
   color: whitesmoke;
-  background-color: #DDAE64;
+  background-color: #a65811;
   padding: 10px 20px;
   text-align: center;
   padding-top: 2.5%;

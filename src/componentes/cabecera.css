@@ -1,16 +1,10 @@
-
-.cabecera{
-    background-color: #000018;
-    display: grid; 
-    grid-template-columns: 25% 75% ; 
-    padding-left: 3.5%;  
-}
-
 .botones_inicio{
     place-items: center;
 }
 
-
+#cabecera{
+    background-color: #f1ead7;
+}
 
 button.boton_inicio{
     font-family:Arial, Helvetica, sans-serif;
@@ -23,18 +17,19 @@ button.boton_inicio{
 }
 
 .miNavbar{
-    background-color:#000018;
+    background-color:#f1ead7;
     padding: 0%;
 }
 
 .contenedor_nav{
-    background-color:#000018;
+    background-color:#f1ead7;
     color: azure;
     margin:0%;
 }
 
 #secciones{
-    color: azure;
+    color: #a85418;
+    font-size: larger;
 }
 
 #boton_inicio{
@@ -42,7 +37,7 @@ button.boton_inicio{
   border-radius: 25px;
   text-decoration: none;
   color: whitesmoke;
-  background-color: #DDAE64;
+  background-color:#a65811;;
   padding: 10px 20px;
   text-align: center;
   padding-top: 2.5%;

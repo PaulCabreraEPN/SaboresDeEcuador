@@ -30,7 +30,7 @@ export const Cabecera = () => {
 
   return (
     
-    <Navbar expand="lg" className='navbar navbar-dark'>
+    <Navbar expand="lg" className='navbar navbar-dark' id='cabecera'>
       
         <Navbar.Brand href="http://localhost:3000/">
           <img src={logo} alt="Logo" width="150" />
@@ -39,8 +39,8 @@ export const Cabecera = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link className="nav-link-custom" onclick={handleLoginClickI} id='secciones'>Inicio</Nav.Link>
-            <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Menú</Nav.Link>
-            <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Promociones</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Marcas</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Inversiones</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob} id='secciones'>Sobre Nosotros</Nav.Link>
             <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Contactos</Nav.Link>
           </Nav>
@@ -65,7 +65,7 @@ export const Cabecera = () => {
               href="#" 
               onClick={handleLoginClick}
             >
-              <img src={user} alt="Usuario" width="50" />
+              <img src={user} alt="Usuario" width="70" />
             </a>
           </div>
         </Navbar.Collapse>

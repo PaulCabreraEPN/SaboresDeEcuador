@@ -36,11 +36,11 @@ function HomePage() {
           <div className='row'>
             <div className='col-6'>
               <br></br>
-              <h4> Disfruta de nuestras promociones </h4>
+              <h4> Disfruta de las Distintas Marcas </h4>
             </div>
             <div className='col-6' id='cabezaProm'>
             <br></br>
-              <button type='button' onClick={handleLoginClickProm} className='botonProm'>Ver todas las Pomociones</button>
+              <button type='button' onClick={handleLoginClickProm} className='botonProm'>Ver todas las Marcas</button>
             </div>
           </div>
           <div className='row'>
@@ -59,9 +59,9 @@ function HomePage() {
           </div>
         </div>
         <div className='Invitacion'>
-          <h1>Conoce nuestro menú</h1>
-          <p>Te invitamos a explorar nuestra marca con deliciosos productos</p>
-          <button type='button' className='botones'>Ver Menú</button>
+          <h1>Conoce nuestra Plataforma</h1>
+          <p>Te invitamos a explorar nuestra Plataforma, dedicada a los amantes del Café Ecuatoriano.</p>
+          <button type='button' className='botones'>Conocer más</button>
         </div>
       </main>
       <Pie />

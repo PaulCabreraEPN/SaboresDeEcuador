@@ -6,8 +6,8 @@ import youtube from './imagenes/Iconos/youtube.png';
 
 export const Pie = () => {
   return (
-    <div class='pie'>
-        <div class="container">
+    <div className='pie'>
+        <div class="container" id='pie'>
             <div class="row ">
                 <div class="col justify-content-center d-flex ">
                     <a href="https://www.facebook.com/?locale=es_LA"><img src={facebook} alt="logo" class='icono'/></a>
