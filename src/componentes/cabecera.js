@@ -41,8 +41,9 @@ export const Cabecera = () => {
             <Nav.Link className="nav-link-custom" onclick={handleLoginClickI} id='secciones'>Inicio</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Marcas</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Inversiones</Nav.Link>
+            <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Eventos</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob} id='secciones'>Sobre Nosotros</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Contactos</Nav.Link>
+            
           </Nav>
           <Form inline className="my-2 my-lg-0">
             <FormControl

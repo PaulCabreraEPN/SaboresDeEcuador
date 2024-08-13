@@ -61,7 +61,7 @@ function HomePage() {
         <div className='Invitacion'>
           <h1>Conoce nuestra Plataforma</h1>
           <p>Te invitamos a explorar nuestra Plataforma, dedicada a los amantes del Café Ecuatoriano.</p>
-          <button type='button' className='botones'>Conocer más</button>
+          <button type='button' className='botones'>Conocer</button>
         </div>
       </main>
       <Pie />
