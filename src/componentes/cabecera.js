@@ -40,8 +40,8 @@ export const Cabecera = () => {
           <Nav className="mr-auto">
             <Nav.Link className="nav-link-custom" onclick={handleLoginClickI} id='secciones'>Inicio</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Marcas</Nav.Link>
-            <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Inversiones</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Eventos</Nav.Link>
+            <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Eventos</Nav.Link>
+            <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Inversiones</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob} id='secciones'>Sobre Nosotros</Nav.Link>
             
           </Nav>
